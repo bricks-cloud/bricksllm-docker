@@ -23,6 +23,7 @@ services:
       - redis
       - postgresql
     image: luyuanxin1995/bricksllm
+    restart: on-failure
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - POSTGRESQL_USERNAME=postgres
